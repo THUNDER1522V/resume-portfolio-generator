@@ -1,0 +1,133 @@
+:root {
+  --ink: #1b1f23;
+  --paper: #fbfaf7;
+  --muted: #6b6f76;
+  --line: #e4e1d8;
+  --accent: #2f5d50;
+  --accent-soft: #e7efe9;
+  --font-display: "Georgia", "Iowan Old Style", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.hero {
+  padding: 4.5rem 1.5rem 3rem;
+  text-align: center;
+  border-bottom: 1px solid var(--line);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+}
+
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  margin: 0 0 0.5rem;
+}
+
+.hero .headline {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.section {
+  margin-bottom: 2.75rem;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent-soft);
+}
+
+.section p {
+  margin: 0 0 0.5rem;
+}
+
+.entry {
+  margin-bottom: 1.4rem;
+}
+
+.entry h3 {
+  margin: 0 0 0.15rem;
+  font-size: 1.05rem;
+}
+
+.entry-meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.4rem;
+}
+
+.entry ul {
+  margin: 0.4rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.pill-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0;
+  margin: 0;
+}
+
+.pill-list li {
+  background: var(--accent-soft);
+  color: var(--accent);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.contact-links a,
+.contact-links span {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 3rem 1.25rem 2rem;
+  }
+}

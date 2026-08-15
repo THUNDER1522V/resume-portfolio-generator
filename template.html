@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{name}} — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <p class="eyebrow">Portfolio</p>
+    <h1>{{name}}</h1>
+    <p class="headline">{{headline}}</p>
+  </header>
+
+  <main>
+    <section class="section" id="summary">
+      <h2>Professional Summary</h2>
+      <p>{{summary}}</p>
+    </section>
+
+    {{sections}}
+  </main>
+
+  <footer>
+    <p>Generated automatically from resume.txt using the Gemini API.</p>
+  </footer>
+
+</body>
+</html>
