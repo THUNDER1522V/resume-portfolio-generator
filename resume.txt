@@ -1,0 +1,39 @@
+Priya Sharma
+Aspiring Software Developer
+
+Email: priya.sharma.dev@example.com
+Phone: +91-9876543210
+LinkedIn: linkedin.com/in/priyasharma-dev
+GitHub: github.com/priyasharma
+
+SUMMARY
+Final-year Computer Science student with hands-on experience building
+web applications using Python and JavaScript. Interested in backend
+development and applied machine learning.
+
+SKILLS
+Python, JavaScript, SQL, Flask, React, Git, REST APIs, Pandas, HTML, CSS
+
+EDUCATION
+B.Tech in Computer Science, Krishna Institute of Technology, 2022 - 2026
+Relevant coursework: Data Structures, Algorithms, Database Systems, Web Development
+
+EXPERIENCE
+Software Development Intern, BrightPath Solutions, May 2025 - Aug 2025
+- Built and maintained REST API endpoints using Flask
+- Collaborated with a team of 4 to ship a customer dashboard feature
+- Wrote unit tests that increased backend test coverage by 20%
+
+PROJECTS
+Expense Tracker Web App
+- Built a full-stack expense tracking app using Flask and SQLite
+- Implemented user authentication and monthly spending charts
+- Tech: Python, Flask, SQLite, Chart.js
+
+Campus Event Finder
+- Created a React app that aggregates campus events from multiple sources
+- Tech: React, Node.js, MongoDB
+
+ACHIEVEMENTS
+Winner, Inter-College Hackathon 2025
+Certified in "Python for Data Science" - Coursera
