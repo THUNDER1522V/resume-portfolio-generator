@@ -7,5 +7,8 @@ __pycache__/
 .venv/
 venv/
 
+# Flask web UI - temporary generated portfolio downloads
+generated/
+
 # OS
 .DS_Store

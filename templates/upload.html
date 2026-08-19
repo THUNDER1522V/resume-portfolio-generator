@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume → Portfolio Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    .upload-wrap { max-width: 560px; margin: 4rem auto; padding: 0 1.5rem; }
+    .drop-zone {
+      border: 2px dashed var(--border);
+      border-radius: 10px;
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      background: var(--surface);
+      transition: border-color 0.15s ease;
+    }
+    .drop-zone.drag-over { border-color: var(--blue); }
+    .file-label {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    input[type="file"] {
+      font-family: var(--font-body);
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+    button {
+      font-family: var(--font-mono);
+      font-weight: 600;
+      font-size: 0.9rem;
+      background: var(--blue);
+      color: #0d1117;
+      border: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover { opacity: 0.9; }
+    .error-box {
+      background: rgba(255, 123, 114, 0.1);
+      border: 1px solid var(--red);
+      color: var(--red);
+      border-radius: 8px;
+      padding: 0.8rem 1rem;
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      margin-bottom: 1.2rem;
+    }
+    .hint {
+      font-family: var(--font-mono);
+      font-size: 0.76rem;
+      color: var(--text-muted);
+      margin-top: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="upload-wrap">
+    <div class="window-bar">
+      <span class="win-dot red"></span><span class="win-dot yellow"></span><span class="win-dot green"></span>
+      <span class="window-title">upload.html</span>
+    </div>
+    <div class="hero-content">
+      <p class="prompt-line"><span class="prompt-user">visitor</span><span class="prompt-symbol">@</span><span class="prompt-host">portfolio</span><span class="prompt-symbol">:~$</span> upload resume</p>
+      <h1 class="name" style="font-size: 1.8rem;">Build Your Portfolio</h1>
+      <p class="comment-line">// upload a .txt or .pdf resume to get started</p>
+    </div>
+
+    {% if error %}
+      <div class="error-box">// error: {{ error }}</div>
+    {% endif %}
+
+    <form action="/generate" method="post" enctype="multipart/form-data">
+      <div class="drop-zone">
+        <span class="file-label">resume_file (.txt or .pdf, max 5MB)</span>
+        <input type="file" name="resume_file" accept=".txt,.pdf" required />
+      </div>
+      <br />
+      <button type="submit">Generate Portfolio →</button>
+    </form>
+    <p class="hint">// your resume is sent to Gemini server-side only — never exposed in the browser</p>
+  </div>
+
+</body>
+</html>

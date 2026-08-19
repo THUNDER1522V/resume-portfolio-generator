@@ -1,0 +1,44 @@
+Arjun Mehta
+arjun.mehta.codes@example.com | +91-9123456780
+github.com/arjunmehta | arjunmehta.dev
+
+ABOUT ME
+Backend-focused developer with 2 years of professional experience building
+scalable APIs and data pipelines. Comfortable across the stack but happiest
+working close to the database and infrastructure layer.
+
+TECHNICAL SKILLS
+Languages: Python, Go, TypeScript
+Frameworks: Django, FastAPI, Express
+Databases: PostgreSQL, Redis, MongoDB
+Tools: Docker, Git, GitHub Actions, AWS (EC2, S3, Lambda)
+
+WORK HISTORY
+
+Backend Engineer
+Solstice Analytics | Bengaluru | Jan 2024 - Present
+Designed and shipped a FastAPI service handling 50K+ daily requests
+Migrated a legacy monolith's reporting module to a separate microservice
+Set up CI/CD pipelines with GitHub Actions, cutting deploy time by half
+
+Junior Developer
+NimbusTech | Bengaluru | Jul 2022 - Dec 2023
+Maintained internal Django admin tools used by the ops team
+Built a Redis-backed caching layer that reduced API latency by 35%
+
+EDUCATION
+B.E. in Information Science
+Bengaluru Institute of Technology, 2018 - 2022
+
+SELECTED PROJECTS
+Taskflow API
+Open-source task management REST API with JWT auth and rate limiting
+Stack: FastAPI, PostgreSQL, Docker
+
+Log Aggregator CLI
+Command-line tool that parses and summarizes server logs in real time
+Stack: Go
+
+LINKS
+LinkedIn: linkedin.com/in/arjunmehta-dev
+Portfolio: arjunmehta.dev
