@@ -53,13 +53,13 @@ content against the original resume before submission.)_
 
 | Test case | Expected behavior | Result |
 |---|---|---|
-| Missing resume.txt | Clear error, safe stop | |
-| Empty/very short resume | Rejected with message | |
-| Valid resume | portfolio.html generated | |
-| Resume with missing sections | No invented content | |
-| Missing API key | Configuration error | |
-| API failure | Handled without crashing | |
-| Invalid JSON response | Clear error, safe stop | |
+| Missing resume.txt | Clear error, safe stop |Passed |
+| Empty/very short resume | Rejected with message | Passed|
+| Valid resume | portfolio.html generated |Passed |
+| Resume with missing sections | No invented content | Passed|
+| Missing API key | Configuration error |Passed |
+| API failure | Handled without crashing |Passed |
+| Invalid JSON response | Clear error, safe stop | Passed|
 
 ## AI usage log
 
