@@ -70,3 +70,5 @@ content against the original resume before submission.)_
 ## Screenshots
 
 _(Add screenshots of the running program and the generated portfolio here.)_
+<img width="240" height="525" alt="image" src="https://github.com/user-attachments/assets/21d47c42-07a9-4030-9961-6a68d3f04baa" />
+
